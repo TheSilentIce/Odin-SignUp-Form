@@ -17,6 +17,8 @@ body {
     height: 100%;
 }
 
+/* IMAGE STUFF*/
+
 .background_container {
     display: flex;
     flex-direction: column;
@@ -24,7 +26,7 @@ body {
     padding: 0;
     width: var(--width-size-image);
     height: 100%;
-
+    background-image: url(images/backgroundImage.png);
 }
 
 .background-image {
@@ -32,12 +34,87 @@ body {
     height: 100%;
 }
 
+
 .transparent-box {
     position: absolute;
     display: flex;
     gap: 3px;
     width: var(--width-size-image);
+    height: 15%;
     justify-content: center;
+    align-items: center;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.75;
+    top: 30%;
+}
+
+.odin-logo {
+    width: calc(var(--width-size-image) - 85%);
+    height: 90%;
+}
+
+.norse-bold {
+    font-family: 'Norse', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+/* Form Classes */
+
+.form-container {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    margin-bottom: 15px;
+}
+
+.header-text {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1;
+    /* align-items: start; */
+}
+
+.form-container {
+    display: flex;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+label,input {
+    display: block;
+}
+
+.text-box {
+    border-radius: 20px;
+}
+
+.input-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
