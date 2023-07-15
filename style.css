@@ -89,6 +89,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
+    margin-bottom: 3%;
+    
 }
 
 .form-text {
@@ -102,9 +104,11 @@ body {
 
 form {
     padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     display: flex;
     gap: 50px;
-    box-shadow: 10px 10px lightblue;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 
 }
 
@@ -123,7 +127,6 @@ input:invalid {
 input:focus {
     outline: none !important;
     border-color: blue;
-    /* box-shadow: 0 0 10px #719ECE; */
 }
 
 
@@ -135,4 +138,17 @@ input:focus {
 
 .label-text {
     color: #36454f;
+}
+
+
+.third-box {
+    display: flex;
+}
+
+.submit-button {
+    background-color: #596d48;
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+    font-size: 15px;
 }
