@@ -12,109 +12,127 @@ body {
     padding: 0;
 }
 
+
 .container {
     display: flex;
     height: 100%;
 }
 
-/* IMAGE STUFF*/
-
-.background_container {
+/* Left Part */
+.image-container {
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    width: var(--width-size-image);
-    height: 100%;
+    justify-content: center;
     background-image: url(images/backgroundImage.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    background-size: cover;
 }
-
-.background-image {
-    width: 100%;
-    height: 100%;
-}
-
 
 .transparent-box {
-    position: absolute;
+    top: 13%;
     display: flex;
-    gap: 3px;
-    width: var(--width-size-image);
-    height: 15%;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    position: absolute;
     background-color: black;
-    opacity: 0.75;
-    top: 30%;
+    opacity: 0.55;
+    height: 15%;
+    width: 30%;
 }
 
 .odin-logo {
-    width: calc(var(--width-size-image) - 85%);
-    height: 90%;
+    position: relative;
+    top: 16%;
+    height: 10%;
+    width: 20%;
 }
 
-.norse-bold {
-    font-family: 'Norse', sans-serif;
+.norse-font {
+    position: relative;
+    top: 16%;
+    font-family: 'Norse',sans-serif;
     color: white;
     font-weight: bold;
     font-size: 50px;
+    height: 10%;
 }
 
 
-/* Form Classes */
 
-.form-container {
-    display: flex;
-    height: 100%;
-    flex: 1;
-    flex-direction: column;
-    /* align-items: center; */
-    padding-left: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
-.header-container {
+/* Right Part */
+.right-container {
     display: flex;
     flex-direction: column;
-    width: 89%;
-    margin-bottom: 15px;
+    padding-left: 6%;
+    background-color: #f9fafb;
 }
 
-.header-text {
+.first-box {
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 30px;
+    
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 10%;
+}
+
+.fb-text {
     color: black;
     font-size: 20px;
-    margin-bottom: 15px;
+    width: 75%;
+    font-weight: bold;
 }
 
-
-.body-container {
+.second-box {
     display: flex;
     flex-direction: column;
-    text-shadow: 1;
-    /* align-items: start; */
+    background-color: #ffffff;
 }
 
-.form-container {
-    display: flex;
-
+.form-text {
+    color: black;
+    font-size: 20px; 
 }
 
-.input-container {
+/* .form-container {
+    display: flex;   
+} */
+
+form {
+    padding-top: 20px;
     display: flex;
-    flex-direction: row;
+    gap: 50px;
+    box-shadow: 10px 10px lightblue;
+
 }
 
 label,input {
     display: block;
 }
 
-.text-box {
-    border-radius: 20px;
+input {
+    border-radius: 7px;
 }
 
-.input-column {
+input:invalid {
+    border-color: red;
+  }
+
+input:focus {
+    outline: none !important;
+    border-color: blue;
+    /* box-shadow: 0 0 10px #719ECE; */
+}
+
+
+.form-column {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 7px;
+}
+
+.label-text {
+    color: #36454f;
 }
